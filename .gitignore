@@ -1,0 +1,7 @@
+
+
+**/build
+**/.vscode
+**/CMSIS/docs
+
+**/sdkconfig.old
