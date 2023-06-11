@@ -2,11 +2,12 @@ cmake_minimum_required(VERSION 3.16)
 
 set(CMAKE_TOOLCHAIN_FILE "toolchain/arm-none-eabi.cmake")
 
-project(stm32-hal-rtos-minimal)
+project(executable)
 
 enable_language(C ASM)
 
-set(TARGET ${CMAKE_PROJECT_NAME}.elf)
+
+set(TARGET executable.elf) #${CMAKE_PROJECT_NAME}
 
 add_executable(${TARGET}
 	"third-party/cmsis_device_f4/Source/Templates/system_stm32f4xx.c"
